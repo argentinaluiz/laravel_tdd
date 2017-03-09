@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Datatable\Schema\Blueprint;
+use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
 class CreateCodeCategoriesTable extends Migration
@@ -13,7 +13,7 @@ class CreateCodeCategoriesTable extends Migration
 		    $table->foreign('parent_id')->references('id')->on('codepress_categories');
 		    $table->string('name');
 		    $table->boolean('active')->default(false);
-		    $table-timestamps();
+		    $table->timestamps();
 		});
 	}
 

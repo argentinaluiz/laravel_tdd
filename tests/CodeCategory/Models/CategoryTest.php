@@ -13,6 +13,6 @@ class CategoryTest extends AbstractTestCase
 		$this->assertEquals('Category Test', $category->name);
 
 		$category = Category::all()->first();
-		$this->assertEquals('Category Test'. $category->name);
+		$this->assertEquals('Category Test', $category->name);
 	}
 }
